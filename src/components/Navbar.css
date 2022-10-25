@@ -1,0 +1,20 @@
+.left-side {
+    border-radius: 20px;
+}
+.avatar {
+    margin-top: 15%;
+    padding-top: 30px;
+}
+
+.menu {
+    padding-top: 10%;
+}
+
+.menu ul li{
+    margin-bottom: 4%;
+    display: flex;
+}
+
+.menu ul li a{
+    margin-top: 1%;
+}

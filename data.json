@@ -1,0 +1,38 @@
+{
+  "posts": 
+  {
+    "id": 1,
+    "name": "Ildiko Gaspar",
+    "adress": "@igaspar",
+    "visa": "2255",
+    "orderHistory": [
+        {
+            "date": "Oct.21,2021",
+            "type": "Pro Annual"
+        },
+        {
+            "date": "Aug.21,2021",
+            "type": "Pro Portfolio"
+        },
+        {
+            "date": "July.21,2021",
+            "type": "Sponsored Post"
+        },
+        {
+            "date": "Jun.21,2021",
+            "type": "Sponsored Post"
+        }
+    ] 
+}
+  ,
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

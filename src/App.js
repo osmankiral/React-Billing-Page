@@ -1,23 +1,41 @@
-import logo from './logo.svg';
+import React from 'react';
+import '@fontsource/roboto';
 import './App.css';
+import Navbar from './components/Navbar';
+import Content from './components/Content';
+import axios from "axios";
+import { useEffect, useState } from 'react';
+
+
+
 
 function App() {
+  
+  
+  const [data, setData] = useState("")
+
+ 
+
+  useEffect(()=>{
+    axios.get("http://localhost:3000/posts")
+    .then(res=>setData(res.data))
+    .catch(err=>console.log(err))
+  },[])
+  
+  
+  
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='container'>
+      <div className="row main">
+        <div className='col-sm-3'>
+          <Navbar data={data}/>
+        </div>
+        <div className="col-sm-9">
+          <Content data={data}/>
+        </div>
+        
+      </div>
     </div>
   );
 }

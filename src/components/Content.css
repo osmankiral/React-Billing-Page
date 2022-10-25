@@ -1,0 +1,20 @@
+.main-side {
+    background-color: #FEFEFF;
+    border-radius: 20px;
+    padding-bottom: 10%;
+}
+
+
+.left-side {
+    margin-left: 50px;
+    margin-top: 3%;
+}
+
+.box {
+    background-color: #EE4D38;
+    border-radius: 20px;
+    margin-top: 45%;
+    padding: 10%;
+}
+
+
